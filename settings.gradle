@@ -1,0 +1,22 @@
+buildscript {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath ("androidx.navigation:navigation-safe-args-gradle-plugin:2.4.1")
+        classpath ("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10")
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "Meu Bolso"
+include ':app'
