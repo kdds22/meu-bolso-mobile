@@ -3,4 +3,6 @@
     <string name="meu_bolso">Meu Bolso</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="entrar">Entrar</string>
+    <string name="descricao_login">Organize suas finanças como desejar</string>
+    <string name="image_descrip">imagem titulo meu bolso</string>
 </resources>
