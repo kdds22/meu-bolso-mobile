@@ -1,5 +1,6 @@
 package com.meubolso.app.ui.di
 
+import com.meubolso.app.ui.login.LoginCadastroViewModel
 import com.meubolso.app.ui.login.LoginViewModel
 import com.meubolso.app.ui.main.MainViewModel
 import org.koin.android.ext.koin.androidApplication
@@ -15,6 +16,11 @@ val viewModelApp = module {
 
     viewModel{
         LoginViewModel(
+            androidApplication()
+        )
+    }
+    viewModel{
+        LoginCadastroViewModel(
             androidApplication()
         )
     }

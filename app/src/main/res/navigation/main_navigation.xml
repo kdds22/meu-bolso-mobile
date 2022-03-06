@@ -9,4 +9,12 @@
         android:name="com.meubolso.app.ui.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/loginCadastroFragment"
+        android:name="com.meubolso.app.ui.login.LoginCadastroFragment"
+        android:label="login_cadastro_fragment"
+        tools:layout="@layout/login_cadastro_fragment" />
+    <action
+        android:id="@+id/action_global_loginCadastroFragment"
+        app:destination="@id/loginCadastroFragment" /><action android:id="@+id/action_global_loginFragment" app:destination="@id/loginFragment"/>
 </navigation>

@@ -1,7 +1,10 @@
 package com.meubolso.app.ui.login
 
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.MutableLiveData
 
-class LoginCadastroViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
+class LoginCadastroViewModel(application: Application) : AndroidViewModel(application) {
+    val emailInput = MutableLiveData<String?>()
+    val passwordInput = MutableLiveData<String>()
 }
