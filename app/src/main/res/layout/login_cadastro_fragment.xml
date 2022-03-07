@@ -2,13 +2,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.login.LoginCadastroFragment">
+    tools:context=".ui.cadastro.LoginCadastroFragment">
 
     <data>
 
         <variable
             name="viewModel"
-            type="com.meubolso.app.ui.login.LoginCadastroViewModel" />
+            type="com.meubolso.app.ui.cadastro.LoginCadastroViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

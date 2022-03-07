@@ -1,4 +1,4 @@
-package com.meubolso.app.ui.login
+package com.meubolso.app.ui.cadastro
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -30,8 +30,6 @@ class LoginCadastroFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
     }
 
 

@@ -8,13 +8,20 @@
         android:id="@+id/loginFragment"
         android:name="com.meubolso.app.ui.login.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_loginCadastroFragment"
+            app:destination="@id/loginCadastroFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginCadastroFragment"
-        android:name="com.meubolso.app.ui.login.LoginCadastroFragment"
+        android:name="com.meubolso.app.ui.cadastro.LoginCadastroFragment"
         android:label="login_cadastro_fragment"
         tools:layout="@layout/login_cadastro_fragment" />
     <action
         android:id="@+id/action_global_loginCadastroFragment"
-        app:destination="@id/loginCadastroFragment" /><action android:id="@+id/action_global_loginFragment" app:destination="@id/loginFragment"/>
+        app:destination="@id/loginCadastroFragment" />
+    <action
+        android:id="@+id/action_global_loginFragment"
+        app:destination="@id/loginFragment" />
 </navigation>

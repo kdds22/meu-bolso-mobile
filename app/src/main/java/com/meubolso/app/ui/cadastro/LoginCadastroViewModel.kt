@@ -1,4 +1,4 @@
-package com.meubolso.app.ui.login
+package com.meubolso.app.ui.cadastro
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

@@ -19,6 +19,10 @@ class LoginFragment : Fragment() {
         fun newInstance() = LoginFragment()
     }
 
+    private val navController by lazy {
+        getNavControllerMain(requireActivity())
+    }
+
     private val viewModel: LoginViewModel by viewModel()
     private lateinit var binding: FragmentLoginBinding
 
@@ -37,12 +41,13 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.entrarLogin.setOnClickListener {
-
+            val action = LoginFragmentDirections.actionLoginFragmentToLoginCadastroFragment()
+            navController.navigate(action)
         }
     }
 
-    fun getNavControllerMain(activity: Activity): NavController {
-        return Navigation.findNavController(activity, R.id.main_navigation)
+    private fun getNavControllerMain(activity: Activity): NavController {
+        return Navigation.findNavController(activity, R.id.nav_host_fragment)
     }
 
 }
