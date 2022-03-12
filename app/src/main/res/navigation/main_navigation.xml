@@ -3,25 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="com.meubolso.app.ui.cadastro.CadastroFragment"
+        android:label="cadastro_fragment"
+        tools:layout="@layout/cadastro_fragment" >
+        <action
+            android:id="@+id/action_cadastroFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <action android:id="@+id/action_global_cadastroFragment" app:destination="@id/cadastroFragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.meubolso.app.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_cadastroFragment"
+            app:destination="@id/cadastroFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.meubolso.app.ui.login.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login">
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
         <action
-            android:id="@+id/action_loginFragment_to_loginCadastroFragment"
-            app:destination="@id/loginCadastroFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/loginCadastroFragment"
-        android:name="com.meubolso.app.ui.cadastro.LoginCadastroFragment"
-        android:label="login_cadastro_fragment"
-        tools:layout="@layout/login_cadastro_fragment" />
-    <action
-        android:id="@+id/action_global_loginCadastroFragment"
-        app:destination="@id/loginCadastroFragment" />
-    <action
-        android:id="@+id/action_global_loginFragment"
-        app:destination="@id/loginFragment" />
+            android:id="@+id/action_loginFragment_to_cadastroFragment"
+            app:destination="@id/cadastroFragment" />
+    </fragment><action android:id="@+id/action_global_loginFragment" app:destination="@id/loginFragment"/><action android:id="@+id/action_global_homeFragment" app:destination="@id/homeFragment"/>
 </navigation>

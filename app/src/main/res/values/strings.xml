@@ -9,7 +9,9 @@
     <string name="senha">Senha</string>
     <string name="ja_sou_membro">Já sou membro.</string>
     <string name="telefone">Telefone</string>
-    <string name="email">Email</string>
-    <string name="senha">Senha</string>
     <string name="sou_um_novo_usuario">Sou um novo usuário.</string>
+    <string name="bem_vindo_ao_meu_bolso">Bem Vindo ao Meu Bolso!</string>
+    <string name="nome_completo">Nome Completo</string>
+    <string name="ir_para_tela_de_cadastro">Ir para tela de Cadastro</string>
+    <string name="cadastrar_novo_usuario">Cadastrar novo usuario</string>
 </resources>

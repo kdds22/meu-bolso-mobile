@@ -11,21 +11,7 @@
     /*
     Rules
     */
-    <style name="SquareCorner">
-        <item name="cornerRadius">0dp</item>
-    </style>
-    <style name="LowRoundedCorner">
-        <item name="cornerRadius">12dp</item>
-    </style>
-    <style name="MidRoundedCorner">
-        <item name="cornerRadius">24dp</item>
-    </style>
-    <style name="HighRoundedCorner">
-        <item name="cornerRadius">50dp</item>
-    </style>
-    <style name="FullRoundedCorner">
-        <item name="cornerRadius">100dp</item>
-    </style>
+
 
     /*
     Buttons
