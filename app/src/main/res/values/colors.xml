@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    /*
+    Meu Bolso System
+    */
+    <color name="primary">#FF6C63FF</color>
+    <color name="secondary">#FFFFFFFF</color>
+    <color name="card_background_primary">#FFF2F2F2</color>
+
 </resources>

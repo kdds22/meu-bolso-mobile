@@ -7,4 +7,9 @@
     <string name="image_descrip">imagem titulo meu bolso</string>
     <string name="email">Email</string>
     <string name="senha">Senha</string>
+    <string name="ja_sou_membro">Já sou membro.</string>
+    <string name="telefone">Telefone</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="sou_um_novo_usuario">Sou um novo usuário.</string>
 </resources>

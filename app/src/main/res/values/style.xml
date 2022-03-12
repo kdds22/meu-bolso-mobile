@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    /*
+    Texts
+    */
+    <style name="TextDefault">
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/enso</item>
+    </style>
+
+    /*
+    Rules
+    */
+    <style name="SquareCorner">
+        <item name="cornerRadius">0dp</item>
+    </style>
+    <style name="LowRoundedCorner">
+        <item name="cornerRadius">12dp</item>
+    </style>
+    <style name="MidRoundedCorner">
+        <item name="cornerRadius">24dp</item>
+    </style>
+    <style name="HighRoundedCorner">
+        <item name="cornerRadius">50dp</item>
+    </style>
+    <style name="FullRoundedCorner">
+        <item name="cornerRadius">100dp</item>
+    </style>
+
+    /*
+    Buttons
+    */
+    <style name="BasicButton">
+        <item name="strokeColor">@color/black</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+    </style>
+
+    <style name="PrimaryButton" parent="BasicButton">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="PrimaryButtonOutline" parent="PrimaryButton">
+        <item name="strokeWidth">1dp</item>
+    </style>
+    <style name="PrimaryButtonOutlineSquare" parent="PrimaryButtonOutline">
+        <item name="cornerRadius">0dp</item>
+    </style>
+    <style name="PrimaryButtonOutlineLowRounded" parent="PrimaryButtonOutline" >
+        <item name="cornerRadius">6dp</item>
+    </style>
+    <style name="PrimaryButtonOutlineMidRounded" parent="PrimaryButtonOutline">
+        <item name="cornerRadius">12dp</item>
+    </style>
+    <style name="PrimaryButtonOutlineHighRounded" parent="PrimaryButtonOutline">
+        <item name="cornerRadius">24dp</item>
+    </style>
+    <style name="PrimaryButtonOutlineFullRounded" parent="PrimaryButtonOutline">
+        <item name="cornerRadius">100dp</item>
+    </style>
+
+    <style name="PrimaryButtonGhost" parent="PrimaryButton">
+        <item name="strokeWidth">0dp</item>
+    </style>
+    <style name="PrimaryButtonGhostSquare" parent="PrimaryButtonGhost">
+        <item name="cornerRadius">0dp</item>
+    </style>
+    <style name="PrimaryButtonGhostLowRounded" parent="PrimaryButtonGhost">
+        <item name="cornerRadius">6dp</item>
+    </style>
+    <style name="PrimaryButtonGhostMidRounded" parent="PrimaryButtonGhost">
+        <item name="cornerRadius">12dp</item>
+    </style>
+    <style name="PrimaryButtonGhostHighRounded" parent="PrimaryButtonGhost">
+        <item name="cornerRadius">24dp</item>
+    </style>
+    <style name="PrimaryButtonGhostFullRounded" parent="PrimaryButtonGhost">
+        <item name="cornerRadius">100dp</item>
+    </style>
+
+    <style name="SecondaryButton" parent="BasicButton">
+        <item name="backgroundTint">@color/secondary</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SecondaryButtonOutline" parent="SecondaryButton">
+        <item name="strokeWidth">1dp</item>
+    </style>
+    <style name="SecondaryButtonOutlineSquare" parent="SecondaryButtonOutline">
+        <item name="cornerRadius">0dp</item>
+    </style>
+    <style name="SecondaryButtonOutlineLowRounded" parent="SecondaryButtonOutline">
+        <item name="cornerRadius">6dp</item>
+    </style>
+    <style name="SecondaryButtonOutlineMidRounded" parent="SecondaryButtonOutline">
+        <item name="cornerRadius">12dp</item>
+    </style>
+    <style name="SecondaryButtonOutlineHighRounded" parent="SecondaryButtonOutline">
+        <item name="cornerRadius">24dp</item>
+    </style>
+    <style name="SecondaryButtonOutlineFullRounded" parent="PrimaryButtonOutline">
+        <item name="cornerRadius">100dp</item>
+    </style>
+
+    <style name="SecondaryButtonGhost" parent="SecondaryButton">
+        <item name="strokeWidth">0dp</item>
+    </style>
+    <style name="SecondaryButtonGhostSquare" parent="SecondaryButtonGhost">
+        <item name="cornerRadius">0dp</item>
+    </style>
+    <style name="SecondaryButtonGhostLowRounded" parent="SecondaryButtonGhost">
+        <item name="cornerRadius">6dp</item>
+    </style>
+    <style name="SecondaryButtonGhostMidRounded" parent="SecondaryButtonGhost">
+        <item name="cornerRadius">12dp</item>
+    </style>
+    <style name="SecondaryButtonGhostHighRounded" parent="SecondaryButtonGhost">
+        <item name="cornerRadius">24dp</item>
+    </style>
+    <style name="SecondaryButtonGhostFullRounded" parent="SecondaryButtonGhost">
+        <item name="cornerRadius">100dp</item>
+    </style>
+
+    /*
+    Cards
+    */
+    <style name="PrimaryCard">
+        <item name="android:backgroundTint">@color/card_background_primary</item>
+        <item name="cardCornerRadius">40dp</item>
+    </style>
+
+
+</resources>
