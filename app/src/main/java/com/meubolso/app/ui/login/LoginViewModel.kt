@@ -1,7 +1,10 @@
 package com.meubolso.app.ui.login
 
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.MutableLiveData
 
-class LoginViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
+class LoginViewModel(application: Application) : AndroidViewModel(application) {
+    var emailInput = MutableLiveData<String?>()
+    var passwordInput = MutableLiveData<String>()
 }
