@@ -9,7 +9,7 @@ import com.meubolso.app.data.entity.Usuario
     entities = [
         Usuario::class
     ],
-    version = 1,
+    version = 2,
     exportSchema = false
 )
 

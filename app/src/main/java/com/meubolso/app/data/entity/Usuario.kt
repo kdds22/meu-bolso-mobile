@@ -8,6 +8,9 @@ data class Usuario(
     @PrimaryKey
     var id: Long = 0L,
     var nome: String = "",
+    var email: String = "",
+    var telefone: String = "",
+    var senha: String = "",
     var token: String? = null,
     var access_token: String? = null,
     var refresh_token: String? = null,
