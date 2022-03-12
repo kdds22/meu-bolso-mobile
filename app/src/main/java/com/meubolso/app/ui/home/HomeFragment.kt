@@ -1,4 +1,4 @@
-package com.meubolso.app.ui.login
+package com.meubolso.app.ui.home
 
 import android.app.Activity
 import android.os.Bundle
@@ -9,27 +9,27 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.meubolso.app.R
-import com.meubolso.app.databinding.FragmentLoginBinding
+import com.meubolso.app.databinding.FragmentHomeBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class LoginFragment : Fragment() {
+class HomeFragment : Fragment() {
 
     companion object {
-        fun newInstance() = LoginFragment()
+        fun newInstance() = HomeFragment()
     }
 
     private val navController by lazy {
         getNavControllerMain(requireActivity())
     }
 
-    private val viewModel: LoginViewModel by viewModel()
-    private lateinit var binding: FragmentLoginBinding
+    private val viewModel: HomeViewModel by viewModel()
+    private lateinit var binding: FragmentHomeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentLoginBinding.inflate(inflater, container, false)
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
         binding.lifecycleOwner = viewLifecycleOwner
         binding.viewModel = viewModel
 
@@ -40,12 +40,12 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.entrarLogin.setOnClickListener {
-/*            val action = LoginFragmentDirections.actionLoginFragmentToLoginEntrarFragment2()
-            navController.navigate(action)*/
+            val action = HomeFragmentDirections.actionHomeFragmentToLoginFragment()
+            navController.navigate(action)
         }
 
         binding.cadastrarLogin.setOnClickListener {
-            val action = LoginFragmentDirections.actionLoginFragmentToCadastroFragment()
+            val action = HomeFragmentDirections.actionHomeFragmentToCadastroFragment()
             navController.navigate(action)
         }
 
